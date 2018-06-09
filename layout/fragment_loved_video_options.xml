@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LovedVideoOptions">
+
+
+    <TextView
+        android:id="@+id/tvVideoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/ivThumbnail"
+        android:layout_width="211dp"
+        android:layout_height="184dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp"
+        android:src="@drawable/gallery" />
+
+    <Button
+        android:id="@+id/bRemove"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/bReturn2Profile"
+        android:layout_marginBottom="79dp"
+        android:text="Remove" />
+
+    <Button
+        android:id="@+id/bShare"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ivThumbnail"
+        android:layout_alignTop="@+id/bRemove"
+        android:layout_marginEnd="-19dp"
+        android:text="Share" />
+
+    <Button
+        android:id="@+id/bWatchVideo"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivThumbnail"
+        android:layout_centerHorizontal="true"
+        android:text="Watch Video" />
+
+    <Button
+        android:id="@+id/bReturn2Profile"
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="Return to Profile" />
+</RelativeLayout>

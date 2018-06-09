@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bennettdierckman.calclogin.DeleteLoved">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="275dp"
+        android:layout_height="175dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/tvVideoTitle"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bDelete"
+            android:layout_alignEnd="@+id/bGoBack"
+            android:layout_alignRight="@+id/bGoBack"
+            android:text="Are you sure you want to leave the party?"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bGoBack"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:text="Go Back" />
+
+        <Button
+            android:id="@+id/bDelete"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Delete" />
+    </RelativeLayout>
+</RelativeLayout>

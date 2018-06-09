@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AttendeeInfluence">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/tvSongTitle"
+        android:layout_width="268dp"
+        android:layout_height="58dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="33dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="19sp" />
+
+    <ImageView
+        android:id="@+id/ivThumbnailURL"
+        android:layout_width="172dp"
+        android:layout_height="125dp"
+        android:layout_alignEnd="@+id/myBDislike"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="125dp"
+        android:src="@drawable/camera" />
+
+    <RelativeLayout
+        android:id="@+id/myBLoveThis"
+        android:layout_width="85dp"
+        android:layout_height="102dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/myBLikeThis"
+        android:layout_marginTop="136dp"
+        android:background="@color/darkgray">
+
+        <TextView
+            android:id="@+id/tvLoveThis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Love This"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/ivLoveThis"
+            android:layout_width="64dp"
+            android:layout_height="65dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/heart" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/myBLikeThis"
+        android:layout_width="120dp"
+        android:layout_height="75dp"
+        android:layout_alignStart="@+id/tvSongTitle"
+        android:layout_alignTop="@+id/myBDislike"
+        android:background="@color/darkgray">
+
+        <ImageView
+            android:id="@+id/ivLikeIt"
+            android:layout_width="33dp"
+            android:layout_height="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@+id/tvLikeIt"
+            android:src="@drawable/thumbup" />
+
+        <TextView
+            android:id="@+id/tvLikeIt"
+            android:layout_width="57dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvNumLikes"
+            android:layout_alignEnd="@+id/tvNumLikes"
+            android:text="Like It"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvNumLikes"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="34sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/myBDislike"
+        android:layout_width="120dp"
+        android:layout_height="75dp"
+        android:layout_alignEnd="@+id/tvSongTitle"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="156dp"
+        android:background="@color/darkgray">
+
+        <TextView
+            android:id="@+id/tvNumDislikes"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="34sp" />
+
+        <ImageView
+            android:id="@+id/ivDislike"
+            android:layout_width="33dp"
+            android:layout_height="22dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@+id/tvNumDislikes"
+            android:src="@drawable/thumbdown" />
+
+        <TextView
+            android:id="@+id/tvDislikeIt"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvNumDislikes"
+            android:layout_alignEnd="@+id/tvNumDislikes"
+            android:text="Dislike"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bReturn2Party"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:text="Return to Party" />
+
+</RelativeLayout>

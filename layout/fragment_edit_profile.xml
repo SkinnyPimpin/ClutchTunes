@@ -1,0 +1,230 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bennettdierckman.calclogin.EditProfile">
+
+    <ImageView
+        android:id="@+id/profilePic"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:src="@drawable/profilepic" />
+
+    <TextView
+        android:id="@+id/userBiography"
+        android:layout_width="275dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/profilePic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:background="@color/colorPrimary"
+        android:text="This is the Default Profile Biography."
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/imgBiographyPencil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/userBiography"
+        android:layout_alignRight="@+id/userBiography"
+        android:layout_alignTop="@+id/userBiography"
+        android:src="@drawable/ic_create_black_24dp" />
+
+    <ImageView
+        android:id="@+id/profilePicPencil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/userBiography"
+        android:layout_alignEnd="@+id/profilePic"
+        android:layout_alignRight="@+id/profilePic"
+        android:src="@drawable/ic_create_black_24dp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="300dp"
+        android:layout_height="280dp"
+        android:layout_below="@+id/userBiography"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgPasswordPencil"
+            android:layout_alignLeft="@+id/textView11"
+            android:layout_alignStart="@+id/textView11"
+            android:text="Password:"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView97"
+            android:layout_alignRight="@+id/textView97"
+            android:layout_below="@+id/textView99"
+            android:layout_marginTop="11dp"
+            android:text="First Name:"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:text="Account Information"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/textView99"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView21"
+            android:layout_alignRight="@+id/textView21"
+            android:layout_below="@+id/textView11"
+            android:layout_marginTop="13dp"
+            android:text="Username:"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/textView98"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView19"
+            android:layout_alignRight="@+id/textView19"
+            android:layout_alignTop="@+id/textView19"
+            android:layout_marginTop="29dp"
+            android:text="D.O.B:"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView97"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView21"
+            android:layout_alignRight="@+id/textView21"
+            android:layout_below="@+id/textView98"
+            android:layout_marginVertical="5dp"
+            android:text="Email:"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/userEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView97"
+            android:layout_alignBottom="@+id/textView97"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginVertical="5dp"
+            android:layout_toEndOf="@+id/textView19"
+            android:layout_toRightOf="@+id/textView19"
+            android:text="example@email.com"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/userUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView99"
+            android:layout_alignBottom="@+id/textView99"
+            android:layout_alignLeft="@+id/userEmail"
+            android:layout_alignStart="@+id/userEmail"
+            android:text="Example Username"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/userFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView19"
+            android:layout_alignBottom="@+id/textView19"
+            android:layout_alignLeft="@+id/userUsername"
+            android:layout_alignStart="@+id/userUsername"
+            android:text="Example FirstName"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/userDOB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView98"
+            android:layout_alignBottom="@+id/textView98"
+            android:layout_alignLeft="@+id/userEmail"
+            android:layout_alignStart="@+id/userEmail"
+            android:text="Ex. DOB"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/userPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView21"
+            android:layout_alignBottom="@+id/textView21"
+            android:layout_alignLeft="@+id/userEmail"
+            android:layout_alignStart="@+id/userEmail"
+            android:text="Password"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imgFirstNamePencil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/userFirstName"
+            android:layout_toEndOf="@+id/userFirstName"
+            android:layout_toRightOf="@+id/userFirstName"
+            android:src="@drawable/ic_create_black_24dp" />
+
+        <ImageView
+            android:id="@+id/imgEmailPencil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/userEmail"
+            android:layout_toEndOf="@+id/userEmail"
+            android:layout_toRightOf="@+id/userEmail"
+            android:src="@drawable/ic_create_black_24dp" />
+
+        <ImageView
+            android:id="@+id/imgPasswordPencil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userEmail"
+            android:layout_toEndOf="@+id/userPassword"
+            android:layout_toRightOf="@+id/userPassword"
+            android:src="@drawable/ic_create_black_24dp" />
+
+        <Button
+            android:id="@+id/bReturnProfile"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView19"
+            android:layout_alignStart="@+id/textView19"
+            android:layout_below="@+id/textView21"
+            android:layout_marginTop="14dp"
+            android:text="Return to Profile" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bennettdierckman.calclogin.ConfirmEnd">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/bManageAccount"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView25"
+        android:layout_alignStart="@+id/textView25"
+        android:layout_below="@+id/bEndParty"
+        android:text="@string/btnConfirmCancel" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:text="@string/titleEnterAccountPassword"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/accountPassword"
+        android:layout_width="275dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/bManageAccount"
+        android:layout_alignStart="@+id/bManageAccount"
+        android:layout_below="@+id/textView25"
+        android:layout_marginTop="11dp"
+        android:background="@color/colorPrimary"
+        android:ems="10"
+        android:hint="@string/accountpasswordHint"
+        android:inputType="textPassword"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/accountPassword"
+        android:layout_alignStart="@+id/accountPassword"
+        android:layout_below="@+id/accountPassword"
+        android:text="@string/textNotification"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/bEndParty"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView26"
+        android:layout_alignStart="@+id/textView26"
+        android:layout_below="@+id/textView26"
+        android:layout_marginTop="11dp"
+        android:text="@string/btnEndParty" />
+
+</RelativeLayout>
